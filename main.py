@@ -28,7 +28,7 @@ async def webhook(request: Request):
         chat_id = update.message.chat.id
 
         response = client.chat.completions.create(
-            model="gpt-4.1-mini",
+            model="gpt-4o-mini",
             messages=[
                 {"role": "user", "content": user_message}
             ]
